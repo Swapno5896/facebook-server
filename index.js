@@ -7,10 +7,10 @@ app.use(bodyParser.json())
 const port = 3000
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://<username>:<password>@cluster0.kv6ok.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<swapno>:<5896>@cluster0.kv6ok.mongodb.net/facebook?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-  const postCollection = client.db("test").collection("devices");
+  const postCollection = client.db("facebook").collection("posts");
  
 });
 
